@@ -120,3 +120,10 @@ while(entrada != "ESC"){
 
 */
 
+let numero = parseInt(prompt("Ingresa un numero"));
+
+for(let i = 0; i < 5; i++){
+    respuesta = numero + i;
+    alert(`Este es tu numero ${respuesta}`);
+}
+
