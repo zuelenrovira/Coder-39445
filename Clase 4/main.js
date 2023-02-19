@@ -20,7 +20,7 @@ function pedirDatos(){
     alert(mensaje);
 }
 
-perdirDaros();
+perdirDatos();
 
 
 estructura de una funcion con parametros
