@@ -81,7 +81,7 @@
 // ];
 
 // for(const producto of productos){
-//   console.log(producto.id);
+//   console.log(producto .id);
 //   console.log(producto.nombre);
 // }
 
