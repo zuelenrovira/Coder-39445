@@ -1,5 +1,5 @@
 
-let comprar = prompt("¿Quiere comprar un producto?");
+/*let comprar = prompt("¿Quiere comprar un producto?");
 
 while (comprar === "si"){
     
@@ -51,3 +51,17 @@ function precioFinal (precio, codDescuento){
             break;
     }
 }
+*/
+
+//eliminar seccion
+//let header = document.getElementById("header");
+//header.remove();
+
+let header = document.getElementById("header");
+let nav = document.createElement("nav");
+header.append(nav);
+let li = document.createElement("li");
+li.innerHTML = "Sobre Nosotros";
+nav.append(li);
+
+

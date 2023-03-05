@@ -1,7 +1,4 @@
-
-
-
-let comprar = prompt("¿Quiere comprar un producto?");
+/*let comprar = prompt("¿Quiere comprar un producto?");
 
 while (comprar === "si"){
 
@@ -21,7 +18,7 @@ while (comprar === "si"){
     
     const tabla = {
         id: 3,
-        nombre: "tabla",
+        nombre: "Tabla",
         precio: 90,
     
     };
@@ -29,19 +26,19 @@ while (comprar === "si"){
     const productos = [];
     productos.push(cuchara,tenedor,tabla);
     
-    //console.log(cuchara.precio);
-    
     let producto = prompt("Ingresa el nombre del producto");
     let codDescuento = prompt("Ingresa el codigo de desuento");
+
+    let buscar = productos.find(item => item.nombre === producto);
     let precio = 0;
 
-    if (producto === "cuchara" || producto === "tenedor"){
-        precio = producto.precio;
+    if (producto === "Cuchara" || producto === "Tenedor"){
+        precio = buscar.precio;
             precioFinal (precio, codDescuento)
     }
 
-    else if (producto === "tabla"){
-        precio = producto.precio;
+    else if (producto === "Tabla"){
+        precio = buscar.precio;
 
         precioFinal(precio, codDescuento)
         
@@ -80,3 +77,46 @@ function precioFinal (precio, codDescuento){
     }
 }
 
+*/
+
+
+const cuchara = {
+    id: 1,
+    nombre: "cuchara",
+    precio: 60,
+
+};
+
+const tenedor = {
+    id: 2,
+    nombre: "tenedor",
+    precio: 60,
+
+};
+
+const tabla = {
+    id: 3,
+    nombre: "tabla",
+    precio: 90,
+
+};
+
+const productos = [];
+productos.push(cuchara,tenedor,tabla);
+
+let producto = "pizza";
+//let codDescuento = prompt("Ingresa el codigo de desuento").toUpperCase();
+
+let buscar = productos.find(item => item.nombre === producto);
+//let precio = buscar.precio;
+
+console.log(buscar);
+
+
+//if (buscar = "undefined"){
+  //  alert("El producto ingresado no existe");
+//}
+
+//else{
+  //  precioFinal(precio, codDescuento);
+//}
