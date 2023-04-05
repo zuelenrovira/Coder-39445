@@ -4,8 +4,8 @@ const productos = [
     {id: 3, nombre: "tabla", precio: 90},  
 ];
 
-localStorage.setItem("arrObjeto", JSON.stringify(productos));
-let arrObjeto = JSON.parse(localStorage.getItem("arrObjeto"));
+// localStorage.setItem("arrObjeto", JSON.stringify(productos));
+// let arrObjeto = JSON.parse(localStorage.getItem("arrObjeto"));
 
 
 let contenedor = document.getElementById("contenedor");

@@ -1,0 +1,80 @@
+/*Estilos de Index*/
+.gridBlog{
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas:"titulo titulo titulo"
+                        "articulo1 articulo2 articulo3"
+                        "borrar borrar borrar";
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+
+    .tituloParaTodo{
+        @extend %titulo;
+    }
+
+    .articulo1{
+        text-align: center;
+        font-weight: bold;
+        grid-area: articulo1;
+
+        img{
+            width: 80%;
+            
+        }
+
+        p{
+            
+            margin-top: 1rem;
+        }
+       
+    }
+
+    .articulo2{
+        text-align: center;
+        font-weight: bold;
+        grid-area: articulo2;
+
+        img{
+            width: 80%;
+            
+        }
+
+        p{
+            margin-top: 1rem;
+        }
+    
+    }
+
+    .articulo3{
+        text-align: center;
+        font-weight: bold;
+        grid-area: articulo3;
+
+        img{
+            width: 80%;
+            
+        }
+
+        p{
+            margin-top: 1rem;
+        }
+    
+    
+    }
+
+    .borrarSeleccion{
+        grid-area: borrar;
+        justify-content: center;
+        
+        p{
+            text-align: center;
+        }
+        
+    }
+}
+
+

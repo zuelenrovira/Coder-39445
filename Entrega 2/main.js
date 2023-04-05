@@ -32,16 +32,8 @@ while (comprar === "si"){
     let buscar = productos.find(item => item.nombre === producto);
     let precio = 0;
     
-    if (buscar != undefined){
-        precio = buscar.precio;
-        precioFinal(precio, codDescuento);
-    }
-
-
-    else{ 
-        alert("El producto ingresado no existe");
-    } 
-
+      buscar != undefined ? (precio = buscar.precio,
+    precioFinal(precio, codDescuento)) : alert("El producto ingresado no existe")
     
     let resultado = precioFinal(precio, codDescuento);
     let mensaje = `El precio final de tu producto es ${resultado}`;
